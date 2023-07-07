@@ -1,13 +1,4 @@
-<pre>
-  
-███████╗███████╗██████╗  █████╗  ██████╗ ██████╗ 
-██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝██╔═══██╗
-█████╗  ███████╗██████╔╝███████║██║     ██║   ██║
-██╔══╝  ╚════██║██╔═══╝ ██╔══██║██║     ██║   ██║
-███████╗███████║██║     ██║  ██║╚██████╗╚██████╔╝
-╚══════╝╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ 
-
-</pre>
+![Espaco Logo](https://github.com/dotMavriQ/ESPACO/blob/main/logo.png?raw=true)
 
 ![Screenshot](https://github.com/dotMavriQ/ESPACO/blob/main/screenshot.png?raw=true)
 
@@ -120,5 +111,3 @@ Espaço extends its heartfelt thanks to the following individuals and resources:
 - GitHub Copilot: The AI-powered code completion tool that helped streamline the coding process and enhance productivity.
 - The PyGame Community: The dedicated developers and contributors behind the PyGame library, whose efforts have made it possible to create engaging games in Python. Visit their website at [pygame.org](https://www.pygame.org/docs/) for more information.
 - Python Docs: The official documentation for the Python programming language, which served as a valuable resource for understanding the language's features and capabilities. Explore the Python Docs at [python.org](https://www.python.org/doc/).
-
-![Espaco Logo](https://github.com/dotMavriQ/ESPACO/blob/main/logo.png?raw=true)
