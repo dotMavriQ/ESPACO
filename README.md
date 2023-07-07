@@ -9,6 +9,8 @@
 
 </pre>
 
+![Screenshot](https://github.com/dotMavriQ/ESPACO/blob/main/screenshot.png?raw=true)
+
 Espaço is an Asteroids-like game written in Python using the PyGame library. It provides an exciting space-themed gaming experience where players control a spaceship, navigate through asteroid fields, and destroy asteroids to earn points. The game is currently in the early stages of development (Alpha version) and will be continuously improved over time.
 
 ## Table of Contents
