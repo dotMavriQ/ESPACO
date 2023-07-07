@@ -166,6 +166,27 @@ while running:
         # Draw the bullet
         pygame.draw.circle(win, bullet_color, (int(x), int(y)), bullet_radius)
 
+        # Collision detection between bullets and asteroids
+    for b_index, (bx, by, b_angle) in enumerate(bullets):
+        for a_index, (ax, ay, adx, ady, ascale) in enumerate(asteroids):
+            scaled_asteroid_width = asteroid_img.get_width() * ascale
+            scaled_asteroid_height = asteroid_img.get_height() * ascale
+            if ax < bx < ax + scaled_asteroid_width and ay < by < ay + scaled_asteroid_height:
+                # Remove the bullet
+                bullets.pop(b_index)
+                
+                # Split the asteroid into two smaller ones
+                new_scale = ascale * 0.5
+                if new_scale > 0.1:  # Only split if the new asteroids won't be too small
+                    asteroids.append((ax, ay, adx * 0.7, ady + 1, new_scale))  # To the "west"
+                    asteroids.append((ax, ay, adx * 0.7, ady - 1, new_scale))  # To the "east"
+                
+                # Remove the original asteroid
+                asteroids.pop(a_index)
+                break  # Exit the inner loop since the bullet is already removed
+
+
+
     # Draw teal shimmer around border
     s = pygame.Surface((WIDTH, HEIGHT), pygame.SRCALPHA)
     pygame.draw.rect(s, shimmer_color, (0, 0, WIDTH, shimmer_thickness))
