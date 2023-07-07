@@ -26,7 +26,7 @@ To install and run Espaço on your local machine, follow these steps:
 4. Install the required dependencies by running the following command:
 
 ```
-pip install -r requirements.txt
+pip install pygame
 ```
 
 This will install the PyGame library, which is necessary to run the game.
